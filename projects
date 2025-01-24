@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="particles">
+        <div id="intro">
+            <h1>Projects</h1>
+            <ul>
+                <li>Stock Market Prediction using Social Media Sentiment</li>
+                <li>Real-time Data Pipeline with Kafka and Spark</li>
+                <li>ETL Automation with Python and SQL</li>
+            </ul>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
