@@ -7,50 +7,41 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <div id="particles">
         <div id="intro">
-		    <!-- Section -->
-					<section>
-						<header>
-							<h2>Get in touch</h2>
-						</header>
-						<div class="content">
-							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
-							<form>
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-							</form>
-						</div>
-						<footer>
-							<ul class="items">
-								<li>
-									<h3>Email</h3>
-									<a href="#">information@untitled.ext</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<a href="#">(000) 000-0000</a>
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>1234 Somewhere Road, Nashville, TN 00000</span>
-								</li>
-							</ul>
-						</footer>
-					</section>
+		<section id="contact-section" style="padding: 40px; background-color: #f8f9fa; text-align: center;">
+  <h2 style="font-size: 2em; margin-bottom: 20px;">Get in Touch</h2>
+  <p style="max-width: 600px; margin: auto; margin-bottom: 40px;">
+    Auctor commodo interdum et malesuada fames ac ante ipsum primis in faucibus. 
+    Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+  </p>
+
+  <!-- Form -->
+  <form id="contact-form" style="max-width: 600px; margin: auto;" action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
+    <div style="margin-bottom: 20px;">
+      <input type="text" name="name" placeholder="Name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
+    </div>
+    <div style="margin-bottom: 20px;">
+      <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" />
+    </div>
+    <div style="margin-bottom: 20px;">
+      <textarea name="message" placeholder="Message" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+    </div>
+    <button type="submit" style="padding: 10px 20px; background-color: #E83951; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      Submit
+    </button>
+  </form>
+
+  <!-- Contact Information -->
+  <div style="margin-top: 40px; text-align: left; max-width: 600px; margin: auto;">
+    <p><strong>Email:</strong> information@untitled.ext</p>
+    <p><strong>Phone:</strong> (000) 000-0000</p>
+    <p><strong>Address:</strong> 1234 Somewhere Road, Nashville, TN 00000</p>
+  </div>
+
+  <p style="margin-top: 20px; font-size: 0.9em; color: #666;">© Untitled. All rights reserved.</p>
+</section>
+
             <h1>Contact Me</h1>
             <p>Email: varshilmehta99@gmail.com</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/varshilmehta99/">LinkedIn Profile</a></p>
