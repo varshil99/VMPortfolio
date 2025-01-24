@@ -11,6 +11,18 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+#contact-form input, #contact-form textarea {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#contact-form button {
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #c32f43;
+}
 
 body {
     font-family: Arial, sans-serif;
