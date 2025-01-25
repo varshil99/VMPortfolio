@@ -1,82 +1,179 @@
-/* About Section Styling */
-#about-section {
-    max-width: 800px;
-    margin: 50px auto;
-    background: #111;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;  
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+#contact-form input, #contact-form textarea {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#contact-form button {
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #c32f43;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
     text-align: center;
 }
 
-/* Tabs Navigation */
-.tab-container nav ul {
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    background: #222;
-    border-radius: 10px;
+    background-color: #111;
 }
 
-.tab-container nav ul li {
-    margin: 0;
+nav ul li {
+    margin: 10px;
 }
 
-.tab-container nav ul li a {
-    display: block;
-    padding: 15px 30px;
+nav ul li a {
     text-decoration: none;
+    padding: 10px 20px;
     color: #fff;
-    font-size: 1.2em;
-    border-radius: 10px;
+    border: 1px solid #00f2ff;
+    border-radius: 20px;
     transition: all 0.3s ease;
 }
 
-.tab-container nav ul li a:hover,
-.tab-container nav ul li a.active {
-    background-color: #00f2ff;
+nav ul li a:hover, .active {
+    background: #00f2ff;
     color: #000;
-    box-shadow: 0 0 15px #00f2ff;
+    box-shadow: 0 0 10px #00f2ff;
 }
 
-/* Tab Content */
-.tab-content {
-    display: none;
-    padding: 20px;
-    background: #222;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+body{
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.tab-content.active {
-    display: block;
+/* particleground demo */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.tab-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.tab-content ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #333;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+body {
+  background: #000010;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .tab-container nav ul {
-        flex-direction: column;
-    }
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-    .tab-container nav ul li a {
-        font-size: 1em;
-    }
+#intro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 10px;
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 120;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+h1::after {
+  content: '';
+  width: 80px;
+  display: block;
+  background: #fff;
+  height: 10px;
+  margin: 30px auto;
+  line-height: 1.1;
+}
+p {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  #intro {
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 6px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 4px;
+  }
 }
