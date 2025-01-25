@@ -26,21 +26,21 @@
                     <li><a href="#" class="tab-link" data-tab="others">Others</a></li>
                 </ul>
             </nav>
-            <div class="tab-content active" id="languages">
+            <div class="tab-content" id="languages">
                 <ul>
                     <li>Python</li>
                     <li>JavaScript</li>
                     <li>SQL</li>
                 </ul>
             </div>
-            <div class="tab-content active" id="frameworks">
+            <div class="tab-content" id="frameworks">
                 <ul>
                     <li>Apache Spark</li>
                     <li>Kafka</li>
                     <li>Hadoop</li>
                 </ul>
             </div>
-            <div class="tab-content active" id="others">
+            <div class="tab-content" id="others">
                 <ul>
                     <li>Git</li>
                     <li>Docker</li>
@@ -53,19 +53,28 @@
     </div>
 
     <script>
+    document.addEventListener('DOMContentLoaded', function () {
         const tabLinks = document.querySelectorAll('.tab-link');
         const tabContents = document.querySelectorAll('.tab-content');
 
         tabLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
+                
+                // Remove active class from all links and contents
                 tabLinks.forEach(tab => tab.classList.remove('active'));
                 tabContents.forEach(content => content.classList.remove('active'));
 
+                // Add active class to the clicked tab
                 link.classList.add('active');
-                document.getElementById(link.dataset.tab).classList.add('active');
+                
+                // Get the corresponding content using data attribute
+                const targetTab = link.getAttribute('data-tab');
+                document.getElementById(targetTab).classList.add('active');
             });
         });
-    </script>
+    });
+</script>
+
 </body>
 </html>
