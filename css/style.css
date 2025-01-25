@@ -8,12 +8,21 @@
   vertical-align: baseline;  
 }
 
-/* Fix for scrolling issue */
+/* Fix for scrolling issue 
 html, body {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden; /* Keep horizontal overflow hidden */
   overflow-y: auto;   /* Allow vertical scrolling */
+} */
+html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto; /* Allow vertical scrolling */
+    position: relative;
 }
 
 /* General styles */
