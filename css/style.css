@@ -23,6 +23,32 @@ footer, header, hgroup, menu, nav, section {
 #contact-form button:hover {
   background-color: #c32f43;
 }
+css file 
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;  
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+#contact-form input, #contact-form textarea {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#contact-form button {
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #c32f43;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -130,6 +156,117 @@ h1::after {
   margin: 30px auto;
   line-height: 1.1;
 }
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
+}
+
+.about-info {
+    width: 45%;
+    text-align: left;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+.about-info h1 {
+    font-size: 2.5em;
+    color: #00f2ff;
+}
+
+.about-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.about-tabs {
+    width: 50%;
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+.about-tabs nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #333;
+    border-radius: 10px;
+}
+
+.about-tabs nav ul li {
+    margin: 0;
+}
+
+.about-tabs nav ul li a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.about-tabs nav ul li a:hover,
+.about-tabs nav ul li a.active {
+    background-color: #00f2ff;
+    color: #000;
+    box-shadow: 0 0 15px #00f2ff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-content ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #444;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info, .about-tabs {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
 p {
   margin: 0 0 30px 0;
   font-size: 24px;
