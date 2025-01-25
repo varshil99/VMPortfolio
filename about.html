@@ -3,35 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Varshil</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-    </header>
+    <div class="about-container">
+        <!-- Left Section: About Info -->
+        <div class="about-info">
+            <h1>About Me</h1>
+            <p>I'm Varshil Mehta, a passionate Data Engineer skilled in Python, SQL, Big Data, and Cloud technologies.</p>
+            <p>I enjoy solving complex problems, designing scalable data pipelines, and learning new technologies.</p>
+        </div>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <div id="particles">
-        <div id="intro">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>Hi, I'm Varshil. I am a passionate developer with a love for creating amazing web experiences. I specialize in front-end development and have a keen interest in user interface design.</p>
-                    <p>With a strong foundation in HTML, CSS, and JavaScript, I enjoy bringing ideas to life in the browser. I am constantly learning and exploring new technologies to keep up with the ever-evolving web development landscape.</p>
-                    <p>Let's connect and create something great together!</p>
-                     </div>
-    </div>
-                </div>
+        <!-- Right Section: Tab Navigation -->
+        <div class="about-tabs">
+            <nav>
+                <ul>
+                    <li><a href="#" class="tab-link active" data-tab="languages">Languages</a></li>
+                    <li><a href="#" class="tab-link" data-tab="frameworks">Frameworks</a></li>
+                    <li><a href="#" class="tab-link" data-tab="others">Others</a></li>
+                </ul>
+            </nav>
+            <div class="tab-content active" id="languages">
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="frameworks">
+                <ul>
+                    <li>Apache Spark</li>
+                    <li>Kafka</li>
+                    <li>Hadoop</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="others">
+                <ul>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <!-- Your existing footer content -->
-    </footer>
+    <script>
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-    <script src="scripts.js"></script>
+        tabLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                tabLinks.forEach(tab => tab.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                link.classList.add('active');
+                document.getElementById(link.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
