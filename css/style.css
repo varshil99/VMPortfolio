@@ -169,11 +169,17 @@ table {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+/*
 html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}*/
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden; /* Keep horizontal overflow hidden */
+  overflow-y: auto;   /* Allow vertical scrolling */
 }
 
 body {
