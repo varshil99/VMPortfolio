@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 /* About Section Styles */
 .about-section {
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #000000; /* Light background color */
     padding: 60px 0;
 }
 
